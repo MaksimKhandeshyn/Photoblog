@@ -1,0 +1,10 @@
+:root{
+    --accent-color: #03A9F4;
+    --main-color: #626262;
+    --add-color:   #B4AD9E;
+}
+.nav-link{
+    font-family: Playfair Display, Robotto, serif;
+    font-weight: 400;
+    font-size: 14px;
+}
