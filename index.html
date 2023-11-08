@@ -4,75 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhotoBlog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#" style="text-decoration: none;" class="nav-link">LIFESTYLE</a></li>
-          <li><a href="#" style="text-decoration: none;" class="nav-link">PHOTODIARY</a></li>
-          <li><a href="#" style="text-decoration: none;" class="nav-link">MUSIC</a></li>
-          <li><a href="#" style="text-decoration: none;" class="nav-link">TRAVEL</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="list-nav list">
+            <li class="nav-item">
+              <a href="#" style="text-decoration: none" class="nav-link"
+                >LIFESTYLE</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" style="text-decoration: none" class="nav-link"
+                >PHOTODIARY</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" style="text-decoration: none" class="nav-link"
+                >MUSIC</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" style="text-decoration: none" class="nav-link"
+                >TRAVEL</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <ul>
-        <li>
-          <article>
-            <img src="/photoblog/imges/musicfestival.jpg" alt="festival" />
-            <p>LIFESTYLE</p>
-            <h2>More than just music</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="/photoblog/imges/coffee.jpg" alt="coffee" />
-            <p>LIFESTYLE</p>
-            <h2>Life is tastes better with coffee</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="/photoblog/imges/twogirls.jpg" alt="girls" />
-            <p>PHOTODIARY</p>
-            <h2>American dreams</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="/photoblog/imges/man.jpg" alt="man" />
-            <p>PHOTODIARY</p>
-            <h2>A day exploring the Alps</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <img src="/photoblog/imges/woman.jpg" alt="woman" />
-            <p>LIFESTYLE</p>
-            <h2>Top 10 songs for running</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
+      <div class="container">
+        <ul class="gallery-list list">
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img
+                src="./imges/musicfestival.jpg"
+                alt="festival"
+                class="gallery-img"
+              />
+              <p class="gallery-text">LIFESTYLE</p>
+              <h2 class="gallery-title">More than just music</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img src="./imges/coffee.jpg" alt="coffee" class="gallery-img" />
+              <p class="gallery-text">LIFESTYLE</p>
+              <h2 class="gallery-title">Life is tastes better with coffee</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img src="./imges/twogirls.jpg" alt="girls" class="gallery-img" />
+              <p class="gallery-text">PHOTODIARY</p>
+              <h2 class="gallery-title">American dreams</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img src="./imges/man.jpg" alt="man" class="gallery-img" />
+              <p class="gallery-text">PHOTODIARY</p>
+              <h2 class="gallery-text">A day exploring the Alps</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img src="./imges/woman.jpg" alt="woman" class="gallery-img" />
+              <p class="gallery-text">LIFESTYLE</p>
+              <h2 class="gallery-title">Top 10 songs for running</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
 
-        <li>
-          <article>
-            <img src="/photoblog/imges/road.jpg" alt="road" />
-            <p>LIFESTYLE</p>
-            <h2>Cold winter days</h2>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </article>
-        </li>
-      </ul>
-      <button type="button">Load more</button><br />
+          <li class="gallery-item">
+            <article class="gallery-box">
+              <img src="./imges/road.jpg" alt="road" class="gallery-img" />
+              <p class="gallery-text">LIFESTYLE</p>
+              <h2 class="gallery-title">Cold winter days</h2>
+              <p class="gallery-info">Lorem ipsum dolor sit amet.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="button">Load more</button>
     </main>
   </body>
 </html>

@@ -1,10 +1,94 @@
-:root{
-    --accent-color: #03A9F4;
-    --main-color: #626262;
-    --add-color:   #B4AD9E;
+:root {
+  --accent-color: #03a9f4;
+  --main-color: #626262;
+  --add-color: #b4ad9e;
 }
-.nav-link{
-    font-family: Playfair Display, Robotto, serif;
-    font-weight: 400;
-    font-size: 14px;
+body {
+  font-family: "Robotto";
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header {
+    padding-top: 71px;
+    padding-bottom: 92px;
+}
+.container {
+    width: 936px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav-link {
+  color: #7d7d7d;
+  font-family: Playfair Display;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.gallery-list {
+    padding-bottom: 66px;
+}
+.gallery-text {
+  margin-bottom: 32px;
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 14px;
+  font-weight: 400;
+}
+.gallery-title {
+  margin-bottom: 40px;
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.gallery-info {
+  color: var(--main-color);
+  font-family: Playfair Display;
+  font-size: 14px;
+}
+.gallery-img {
+  margin-bottom: 62px;
+}
+
+.gallery-item:nth-child(n+3) .gallery-img {
+  margin-bottom: 32px;
+}
+.button {
+  padding: 20px 48px 21px 49px;
 }
