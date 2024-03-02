@@ -2,9 +2,11 @@
   --accent-color: #03a9f4;
   --main-color: #626262;
   --add-color: #b4ad9e;
+  --white: #fff;
+  --color-link: #7d7d7d;
 }
 body {
-  font-family: "Robotto";
+  font-family: "Playfair Display";
 }
 h1,
 h2,
@@ -60,11 +62,11 @@ img {
   margin-right: 99px;
 }
 .nav-link {
-  color: #7d7d7d;
-  font-family: Playfair Display;
+  color: var(--color-link);
   font-size: 14px;
   text-transform: uppercase;
 }
+.nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
@@ -72,29 +74,27 @@ img {
   padding-bottom: 66px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 65px;
+  row-gap: 130px;
+  /* justify-content: space-between; */
 }
-/* .gallery-item {
-  margin-right: 61px;
-} */
+.gallery-item {
+  flex-basis: calc(100% / 2 - 65px);
+}
 .gallery-text {
   margin-bottom: 32px;
   color: var(--main-color);
-  font-family: Playfair Display;
   font-size: 14px;
-  font-weight: 400;
 }
 .gallery-title {
   margin-bottom: 40px;
   color: var(--main-color);
-  font-family: Playfair Display;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
+  line-height: 1.33;
 }
 .gallery-info {
   color: var(--main-color);
-  font-family: Playfair Display;
   font-size: 14px;
 }
 .gallery-img {
@@ -105,15 +105,13 @@ img {
   margin-bottom: 32px;
 }
 .button {
-  color: #626262;
-  font-family: Playfair Display;
+  color: var(--main-color);
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   padding: 20px 48px 21px 49px;
-  background: #fff;
-  border: 1px solid #626262;
-  display: flex;
+  background: var(--white);
+  border: 1px solid var(--main-color);
+  display: block;
   margin: 0 auto;
+  margin-bottom: 66px;
 }
